@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 128">
+  <path class="pinA" fill="#E2725B" d="M48 4 Q88 4 88 44 Q88 74 48 124 Q8 74 8 44 Q8 4 48 4 Z"/>
+  <circle class="pinB" fill="#FBF4E4" cx="48" cy="44" r="18"/>
+</svg>

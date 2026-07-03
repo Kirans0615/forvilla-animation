@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 190">
+  <g class="rope" stroke="#8A5A3B" stroke-width="7" stroke-linecap="round">
+    <line x1="150" y1="0" x2="170" y2="46"/>
+    <line x1="350" y1="0" x2="330" y2="46"/>
+  </g>
+  <rect class="signBd" fill="#8A5A3B" x="24" y="40" width="452" height="140" rx="26"/>
+  <rect class="signBg" fill="#FBF4E4" x="36" y="52" width="428" height="116" rx="18"/>
+</svg>

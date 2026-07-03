@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forvilla Reel Template</title>
+<style>
+  :root{
+    --ink:#3A2A20; --cream:#FBF4E4;
+    --sky:#FDEEDC; --canA:#E2725B; --canB:#F6E7D3; --canTrim:#C4523E;
+    --accent:#E2725B; --chip:#F2B84B; --avBg:#F2B84B;
+  }
+  *{margin:0;box-sizing:border-box}
+  body{background:#efe9dd;font-family:"Avenir Next","Trebuchet MS",sans-serif;color:#3A2A20}
+  #wrap{display:flex;flex-direction:column;align-items:center;gap:14px;padding:18px}
+  #stagebox{width:min(46vh,92vw);aspect-ratio:9/16;box-shadow:0 8px 40px rgba(58,42,32,.25);border-radius:12px;overflow:hidden}
+  svg#stage{width:100%;height:100%;display:block}
+  #ui{display:flex;flex-direction:column;gap:10px;align-items:center;width:min(46vh,92vw)}
+  #vendors{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+  #vendors button{border:2px solid #3A2A20;background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}
+  #vendors button.on{background:#3A2A20;color:#fff}
+  #bar{display:flex;gap:10px;align-items:center;width:100%}
+  #play{border:2px solid #3A2A20;background:#3A2A20;color:#fff;border-radius:8px;padding:6px 18px;font:inherit;cursor:pointer}
+  #scrub{flex:1}
+  #tc{font-variant-numeric:tabular-nums;font-size:13px;width:88px;text-align:right}
+  body.render #ui{display:none}
+  body.render{background:#000}
+  body.render #wrap{padding:0}
+  body.render #stagebox{width:1080px;height:1920px;aspect-ratio:auto;border-radius:0;box-shadow:none}
+
+  /* palette hooks — override the asset files' baked-in fills */
+  .canA{fill:var(--canA)} .canB{fill:var(--canB)} .canTrim{fill:var(--canTrim)}
+  .bunA{fill:var(--canA)} .bunB{fill:var(--chip)}
+  .avBg{fill:var(--avBg)} .avBody{fill:var(--accent)}
+  .pinA{fill:var(--accent)} .hrt{fill:var(--accent)}
+  .lgTile{fill:var(--accent)}
+  .canKnob{fill:var(--chip)}
+
+  text{font-family:"Avenir Next","Trebuchet MS",sans-serif}
+  .tName{font-weight:700}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="stagebox">
+  <svg id="stage" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+    <rect id="skyBg" x="0" y="0" width="1080" height="1920" fill="var(--sky)"/>
+
+    <g id="scene">
+      <g id="lSun" transform="translate(120 200)"></g>
+      <g id="lCloud1" transform="translate(640 180)"></g>
+      <g id="lCloud2" transform="translate(120 400)"></g>
+      <g id="lGround" transform="translate(0 1160)"></g>
+      <g id="lTreeL" transform="translate(20 980)"></g>
+      <g id="lTreeR" transform="translate(830 950)"></g>
+
+      <g id="booth" transform="translate(540 60)">
+        <g id="lPosts" transform="translate(-320 720)"></g>
+        <g id="lCounter" transform="translate(-280 1080)"></g>
+        <g id="lCanopy" transform="translate(-350 640)"></g>
+        <g id="lBunting" transform="translate(-360 830)"></g>
+        <g id="lSign" transform="translate(-250 806)">
+          <g id="lSignArt"></g>
+          <text id="signL1" class="tName" x="250" y="105" text-anchor="middle" font-size="46" fill="#3A2A20"></text>
+          <text id="signL2" class="tName" x="250" y="155" text-anchor="middle" font-size="46" fill="#3A2A20"></text>
+        </g>
+        <g id="lProducts"></g>
+      </g>
+
+      <g id="lSparkles"></g>
+    </g>
+
+    <!-- intro -->
+    <g id="intro">
+      <rect x="0" y="0" width="1080" height="1920" fill="var(--cream)"/>
+      <g id="introLogo" transform="translate(440 700)"></g>
+      <text id="introWord" x="540" y="1050" text-anchor="middle" font-size="110" font-weight="700" fill="#3A2A20">forvilla</text>
+      <text id="introTag" x="540" y="1130" text-anchor="middle" font-size="44" fill="#3A2A20" opacity="0.75">for the village</text>
+    </g>
+
+    <!-- overlays (screen space) -->
+    <g id="labels"></g>
+
+    <g id="storyGrp">
+      <g id="lAvatar" transform="translate(120 760)"></g>
+      <g id="storyCard">
+        <rect x="380" y="700" width="580" height="290" rx="36" fill="var(--cream)" stroke="#3A2A20" stroke-width="5"/>
+        <path d="M380 830 l-44 30 l46 26 Z" fill="var(--cream)" stroke="#3A2A20" stroke-width="5"/>
+        <text id="storyKick" x="420" y="770" font-size="30" font-weight="700" fill="var(--accent)" letter-spacing="4">MEET THE MAKER</text>
+        <text id="story1" x="420" y="838" font-size="40" fill="#3A2A20"></text>
+        <text id="story2" x="420" y="892" font-size="40" fill="#3A2A20"></text>
+        <text id="storyHandle" x="420" y="950" font-size="34" font-weight="600" fill="#3A2A20" opacity="0.7"></text>
+      </g>
+      <g id="hearts"></g>
+    </g>
+
+    <g id="whereGrp">
+      <g id="lPin" transform="translate(492 1180)"></g>
+      <g id="whereCard">
+        <rect x="120" y="1320" width="840" height="330" rx="40" fill="var(--cream)" stroke="#3A2A20" stroke-width="5"/>
+        <text x="540" y="1390" text-anchor="middle" font-size="30" font-weight="700" fill="var(--accent)" letter-spacing="4">FIND THEM AT</text>
+        <text id="whereEvent" x="540" y="1456" text-anchor="middle" font-size="52" font-weight="700" fill="#3A2A20"></text>
+        <text id="whereMeta" x="540" y="1520" text-anchor="middle" font-size="36" fill="#3A2A20" opacity="0.8"></text>
+        <g id="boothChip">
+          <rect x="420" y="1552" width="240" height="64" rx="32" fill="var(--chip)"/>
+          <text id="whereBooth" x="540" y="1595" text-anchor="middle" font-size="34" font-weight="700" fill="#3A2A20"></text>
+        </g>
+      </g>
+    </g>
+
+    <g id="ctaGrp">
+      <rect id="ctaBg" x="0" y="0" width="1080" height="1920" fill="var(--cream)"/>
+      <g id="lPhone" transform="translate(260 300)"></g>
+      <text id="ctaLine1" x="540" y="1560" text-anchor="middle" font-size="50" font-weight="700" fill="#3A2A20">Follow the maker on</text>
+      <g id="ctaLogo" transform="translate(468 1600)"></g>
+      <text id="ctaWord" x="540" y="1830" text-anchor="middle" font-size="72" font-weight="700" fill="#3A2A20">forvilla</text>
+      <text id="ctaHandle" x="540" y="1888" text-anchor="middle" font-size="36" fill="#3A2A20" opacity="0.7">@forvilla_project · for the village</text>
+    </g>
+  </svg>
+  </div>
+  <div id="ui">
+    <div id="vendors"></div>
+    <div id="bar">
+      <button id="play">Play</button>
+      <input id="scrub" type="range" min="0" max="30" step="0.033" value="0">
+      <span id="tc">0.00 / 30s</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const DUR = 30;
+const qs = new URLSearchParams(location.search);
+const RENDER = qs.get("render") === "1";
+if (RENDER) document.body.classList.add("render");
+
+const $ = id => document.getElementById(id);
+const ASSETS = ["ground","tree","cloud","sun","posts","counter","canopy","sign",
+                "bunting","avatar","sparkle","heart","pin","logo","phone"];
+
+/* ---------- easing ---------- */
+const clamp01 = x => Math.max(0, Math.min(1, x));
+const lin = (t,a,b) => clamp01((t-a)/(b-a));
+const outCubic = p => 1 - Math.pow(1-p, 3);
+const inCubic  = p => p*p*p;
+const inOut    = p => p<.5 ? 4*p*p*p : 1 - Math.pow(-2*p+2,3)/2;
+const outBack  = p => { const c=1.70158, c3=c+1; return 1 + c3*Math.pow(p-1,3) + c*Math.pow(p-1,2); };
+const outElastic = p => p===0?0 : p===1?1 :
+  Math.pow(2,-10*p) * Math.sin((p*10 - 0.75) * (2*Math.PI/3)) + 1;
+/* progress helper: eased 0→1 between a and b */
+const seg = (t,a,b,e=outCubic) => e(lin(t,a,b));
+
+/* ---------- asset loading ---------- */
+const svgSrc = {};
+async function loadAssets(){
+  await Promise.all(ASSETS.map(async n => {
+    const r = await fetch(`assets/${n}.svg`);
+    svgSrc[n] = await r.text();
+  }));
+}
+function inner(name){ // strip outer <svg> wrapper, keep children
+  const doc = new DOMParser().parseFromString(svgSrc[name], "image/svg+xml");
+  const s = doc.documentElement;
+  const g = document.createElementNS("http://www.w3.org/2000/svg","g");
+  [...s.childNodes].forEach(n => g.appendChild(document.importNode(n, true)));
+  return g;
+}
+function place(layerId, name, scale=1){
+  const l = $(layerId); l.innerHTML = "";
+  const g = inner(name);
+  if (scale !== 1) g.setAttribute("transform", `scale(${scale})`);
+  l.appendChild(g);
+}
+
+/* ---------- config / scene build ---------- */
+let CFGS = {}, cfg = null, vendorKey = "candles";
+let productNodes = [], labelNodes = [], sparkNodes = [], heartNodes = [];
+
+async function loadConfigs(){
+  CFGS = await (await fetch("template/configs.json")).json();
+}
+
+async function setVendor(key){
+  vendorKey = key; cfg = CFGS[key];
+  const r = document.documentElement.style;
+  for (const [k,v] of Object.entries(cfg.palette)) r.setProperty(`--${k}`, v);
+
+  // static art
+  place("lGround","ground");
+  place("lTreeL","tree", 0.95);
+  place("lTreeR","tree", 1.1);
+  place("lCloud1","cloud", 1.1);
+  place("lCloud2","cloud", 0.8);
+  place("lSun","sun", 1.15);
+  place("lPosts","posts");
+  place("lCounter","counter");
+  place("lCanopy","canopy");
+  place("lBunting","bunting");
+  place("lSignArt","sign");
+  place("lAvatar","avatar");
+  place("lPin","pin", 1.2);
+  place("introLogo","logo");
+  place("ctaLogo","logo");
+  place("lPhone","phone");
+
+  // sign text
+  $("signL1").textContent = cfg.nameLines[0];
+  $("signL2").textContent = cfg.nameLines[1] || "";
+  $("signL1").setAttribute("y", cfg.nameLines[1] ? 105 : 130);
+
+  // products from vendor sheet
+  {
+    const txt = await (await fetch(`assets/${cfg.sheet}`)).text();
+    const doc = new DOMParser().parseFromString(txt,"image/svg+xml");
+    const holder = $("lProducts"); holder.innerHTML = "";
+    productNodes = []; labelNodes = [];
+    const lab = $("labels"); lab.innerHTML = "";
+    const X = [-230, 0, 230];              // product centers, booth space
+    for (let i=0;i<3;i++){
+      const src = doc.getElementById(`p${i+1}`);
+      const g = document.createElementNS("http://www.w3.org/2000/svg","g");
+      const art = document.importNode(src, true);
+      art.removeAttribute("transform");
+      art.setAttribute("transform","translate(-100 -190)"); // product base at origin
+      g.appendChild(art);
+      // pivot at product base center, sitting on counter top (y=1108 booth-space)
+      g.dataset.x = X[i]; g.dataset.y = 1108;
+      holder.appendChild(g);
+      productNodes.push(g);
+
+      // label chip (screen space)
+      const lg = document.createElementNS("http://www.w3.org/2000/svg","g");
+      const txtW = cfg.products[i].length * 19 + 56;
+      lg.innerHTML = `<rect x="${-txtW/2}" y="-38" width="${txtW}" height="76" rx="38"
+          fill="var(--cream)" stroke="#3A2A20" stroke-width="5"></rect>
+        <text text-anchor="middle" y="13" font-size="36" font-weight="600" fill="#3A2A20">${cfg.products[i]}</text>`;
+      lab.appendChild(lg);
+      labelNodes.push(lg);
+    }
+  }
+
+  // sparkles (build-complete burst + product pops)
+  const sp = $("lSparkles"); sp.innerHTML = ""; sparkNodes = [];
+  const spots = [[300,760],[790,700],[540,620],[250,1000],[840,980],[430,700],[660,780],[540,860]];
+  for (const [x,y] of spots){
+    const g = document.createElementNS("http://www.w3.org/2000/svg","g");
+    g.appendChild(inner("sparkle"));
+    g.dataset.x = x; g.dataset.y = y;
+    sp.appendChild(g); sparkNodes.push(g);
+  }
+
+  // hearts
+  const hh = $("hearts"); hh.innerHTML = ""; heartNodes = [];
+  for (let i=0;i<5;i++){
+    const g = document.createElementNS("http://www.w3.org/2000/svg","g");
+    g.appendChild(inner("heart"));
+    g.dataset.x = 210 + i*40; g.dataset.i = i;
+    hh.appendChild(g); heartNodes.push(g);
+  }
+
+  // copy
+  $("story1").textContent = cfg.story1;
+  $("story2").textContent = cfg.story2;
+  $("storyHandle").textContent = cfg.handle;
+  $("whereEvent").textContent = cfg.eventName;
+  $("whereMeta").textContent = `${cfg.eventDate} · ${cfg.venue}`;
+  $("whereBooth").textContent = cfg.booth;
+  $("ctaLine1").textContent = `Follow ${cfg.nameLines[0]} on`;
+
+  seek(curT);
+}
+
+/* ---------- helpers ---------- */
+const T = (el,str) => el.setAttribute("transform", str);
+const O = (el,v)   => el.setAttribute("opacity", v);
+
+/* ---------- the 30s timeline ---------- */
+let curT = 0;
+function seek(t){
+  curT = t;
+
+  /* ===== INTRO 0–2.7 ===== */
+  const intro = $("intro");
+  const introOut = seg(t, 2.2, 2.7, inCubic);
+  O(intro, t < 2.7 ? 1 - introOut : 0);
+  intro.style.display = t < 2.7 ? "" : "none";
+  if (t < 2.7){
+    const lp = seg(t, 0.25, 0.95, outBack);
+    T($("introLogo"), `translate(${440+100*(1-lp)} ${700+100*(1-lp)}) scale(${lp})`);
+    O($("introWord"), seg(t, 0.7, 1.2));
+    $("introWord").setAttribute("y", 1050 + 40*(1-seg(t,0.7,1.3)));
+    O($("introTag"), seg(t, 1.15, 1.6));
+    if (introOut > 0)
+      T($("introLogo"), `translate(440 ${700-300*introOut}) scale(${1+0.4*introOut})`);
+  }
+
+  /* ===== CAMERA ===== */
+  // zoom to counter for products, back for story, hold, then shrink for CTA handled via ctaGrp
+  const zIn  = seg(t, 8.0, 9.0, inOut);
+  const zOut = seg(t, 14.4, 15.3, inOut);
+  const z = 1 + 0.42*zIn - 0.42*zOut;
+  const cy = 260*zIn - 260*zOut;      // pan down toward counter
+  const shrink = seg(t, 25.2, 26.3, inOut);
+  const scScale = z * (1 - 0.62*shrink);
+  const scY = -cy*1 + (shrink * -20);
+  // scale about center of booth (540, 1000)
+  const cx0 = 540, cy0 = 1000;
+  T($("scene"), `translate(${cx0} ${cy0 + scY}) scale(${scScale}) translate(${-cx0} ${-cy0 - cy*0})`);
+  // note: cy pan folded into scY for simplicity
+
+  /* ===== BUILD 2.5–8 ===== */
+  // ground pop
+  const gp = seg(t, 2.5, 3.1, outBack);
+  T($("lGround"), `translate(540 1510) scale(${gp}) translate(-540 -350)`);
+  O($("lGround"), t>2.5?1:0);
+  // sun + clouds
+  const sp2 = seg(t, 2.7, 3.4, outBack);
+  T($("lSun"), `translate(${120} ${200 + 120*(1-seg(t,2.7,3.4,outCubic))}) scale(${0.4+0.75*sp2})`);
+  O($("lSun"), seg(t, 2.7, 3.2));
+  O($("lCloud1"), 0.9*seg(t, 2.9, 3.5));
+  O($("lCloud2"), 0.75*seg(t, 3.1, 3.7));
+  T($("lCloud1"), `translate(${640 + 26*Math.sin(t*0.5)} 180)`);
+  T($("lCloud2"), `translate(${120 + 32*Math.sin(t*0.4+2)} 400)`);
+  // trees
+  const tl = seg(t, 3.0, 3.6, outBack), tr = seg(t, 3.15, 3.75, outBack);
+  T($("lTreeL"), `translate(140 1284) scale(${0.95*tl}) translate(-120 -320)`);
+  T($("lTreeR"), `translate(962 1290) scale(${1.1*tr}) translate(-120 -320)`);
+  O($("lTreeL"), t>3.0?1:0); O($("lTreeR"), t>3.15?1:0);
+  // posts drop from sky
+  const pd = seg(t, 3.5, 4.15, outBack);
+  T($("lPosts"), `translate(-320 ${720 - 900*(1-pd)})`);
+  O($("lPosts"), t>3.5?1:0);
+  // counter rises from ground
+  const cr = seg(t, 4.2, 4.85, outBack);
+  T($("lCounter"), `translate(-280 ${1080 + 420*(1-cr)})`);
+  O($("lCounter"), t>4.2?1:0);
+  // canopy drops with stretch
+  const cd = seg(t, 4.9, 5.55, outBack);
+  const cdY = 640 - 760*(1-cd);
+  const stretch = 1 + 0.25*(1-seg(t, 4.9, 5.8, outElastic));
+  T($("lCanopy"), `translate(-350 ${cdY}) translate(350 95) scale(1 ${stretch}) translate(-350 -95)`);
+  O($("lCanopy"), t>4.9?1:0);
+  // sign swings down (pendulum around rope top, x=+250 local)
+  const sw = seg(t, 5.7, 6.9, outElastic);
+  const swA = -85*(1-sw);
+  T($("lSign"), `translate(-250 726) rotate(${swA} 250 0)`);
+  O($("lSign"), t>5.7?1:0);
+  // bunting draws across the counter front via scaleX
+  const bd = seg(t, 6.5, 7.2, outCubic);
+  T($("lBunting"), `translate(-360 1116) translate(360 0) scale(${bd} ${0.6+0.4*bd}) translate(-360 0)`);
+  O($("lBunting"), t>6.5?1:0);
+  // sparkle burst at build complete (7.1–8.0)
+  sparkNodes.forEach((g,i)=>{
+    const t0 = 7.05 + i*0.07;
+    const p = seg(t, t0, t0+0.55, outCubic);
+    const fade = 1 - seg(t, t0+0.35, t0+0.7, inCubic);
+    const s = 0.5 + 1.1*p;
+    O(g, t>t0 && t<t0+0.75 ? fade : 0);
+    T(g, `translate(${+g.dataset.x} ${+g.dataset.y - 60*p}) scale(${s}) rotate(${90*p}) translate(-40 -40)`);
+  });
+
+  /* ===== PRODUCTS 8.6–14.4 (booth space; labels screen space) ===== */
+  const popT = [9.0, 10.9, 12.8];
+  productNodes.forEach((g,i)=>{
+    const p = seg(t, popT[i], popT[i]+0.6, outBack);
+    O(g, t>popT[i]?1:0);
+    T(g, `translate(${+g.dataset.x} ${+g.dataset.y}) scale(${1.05*p})`);
+  });
+  labelNodes.forEach((g,i)=>{
+    const a = seg(t, popT[i]+0.25, popT[i]+0.6, outBack);
+    const gone = seg(t, 14.2, 14.7, inCubic);
+    // label position: above each product, in screen space (match camera zoom on counter)
+    const lx = [213, 540, 867][i];
+    O(g, Math.max(0, a - gone));
+    T(g, `translate(${lx} ${1050 - 30*a}) scale(${0.6+0.4*a})`);
+  });
+
+  /* ===== STORY 15–20.4 ===== */
+  const st = $("storyGrp");
+  const stIn = seg(t, 15.0, 15.7, outBack);
+  const stOut = seg(t, 19.9, 20.4, inCubic);
+  O(st, t>15.0 ? Math.max(0, Math.min(1, stIn) - stOut) : 0);
+  T($("lAvatar"), `translate(${120 - 320*(1-stIn)} 760)`);
+  const scd = seg(t, 15.5, 16.1, outBack);
+  T($("storyCard"), `translate(${540*(1) - 540} ${60*(1-scd)}) `);
+  O($("storyCard"), scd);
+  O($("story1"), seg(t, 15.9, 16.3));
+  O($("story2"), seg(t, 16.5, 16.9));
+  O($("storyHandle"), seg(t, 17.1, 17.5));
+  heartNodes.forEach((g)=>{
+    const i = +g.dataset.i;
+    const t0 = 16.6 + i*0.55;
+    const p = seg(t, t0, t0+1.6, p=>p);
+    const drift = Math.sin((t + i)*3)*16;
+    O(g, t>t0 && p<1 ? (p<0.15 ? p/0.15 : 1-outCubic(p)) * (1-stOut): 0);
+    T(g, `translate(${+g.dataset.x + drift} ${1030 - 280*p}) scale(${0.5+0.4*(i%3)*0.3+0.3*p})`);
+  });
+
+  /* ===== WHERE 20.6–25.2 ===== */
+  const wg = $("whereGrp");
+  const wIn = seg(t, 20.6, 21.3, outBack);
+  const wOut = seg(t, 24.8, 25.3, inCubic);
+  O(wg, t>20.6 ? Math.max(0, wIn - wOut) : 0);
+  T($("whereCard"), `translate(0 ${360*(1-wIn)})`);
+  const pinB = seg(t, 21.4, 22.0, outBack);
+  const pinBounce = Math.abs(Math.sin((t-22)*2.4))* (t>22 && t<24.6 ? 22 : 0);
+  T($("lPin"), `translate(${492} ${1180 - 200*(1-pinB) - pinBounce}) scale(${1.2*pinB})`);
+  O($("lPin"), t>21.4 ? Math.max(0, 1 - wOut) : 0);
+
+  /* ===== CTA 25.2–30 ===== */
+  const cg = $("ctaGrp");
+  const cIn = seg(t, 25.2, 26.0, inOut);
+  cg.style.display = t > 25.0 ? "" : "none";
+  O(cg, cIn);
+  O($("ctaBg"), 0);                       // scene stays visible inside phone
+  const phIn = seg(t, 25.4, 26.2, outBack);
+  T($("lPhone"), `translate(${260} ${300 + 700*(1-phIn)})`);
+  O($("lPhone"), t>25.4?1:0);
+  O($("ctaLine1"), seg(t, 26.4, 26.8));
+  const clg = seg(t, 26.8, 27.5, outBack);
+  const pulse = 1 + 0.03*Math.sin((t-27.5)*4);
+  T($("ctaLogo"), `translate(540 1690) scale(${0.9*clg*(t>27.5?pulse:1)}) translate(-100 -100)`);
+  O($("ctaLogo"), t>26.8?1:0);
+  O($("ctaWord"), seg(t, 27.2, 27.6));
+  O($("ctaHandle"), seg(t, 27.6, 28.0));
+
+  updateUI();
+}
+
+/* ---------- player ---------- */
+let playing = false, t0 = 0, tOffset = 0;
+function tick(now){
+  if (!playing) return;
+  const t = Math.min(DUR, (now - t0)/1000 + tOffset);
+  seek(t);
+  if (t >= DUR){ playing = false; $("play").textContent = "Replay"; return; }
+  requestAnimationFrame(tick);
+}
+function updateUI(){
+  if (RENDER) return;
+  $("scrub").value = curT;
+  $("tc").textContent = `${curT.toFixed(2)} / ${DUR}s`;
+}
+
+async function boot(){
+  await Promise.all([loadAssets(), loadConfigs()]);
+  const box = $("vendors");
+  for (const k of Object.keys(CFGS)){
+    const b = document.createElement("button");
+    b.textContent = CFGS[k].nameLines[0];
+    b.onclick = () => { document.querySelectorAll("#vendors button").forEach(x=>x.classList.remove("on"));
+      b.classList.add("on"); setVendor(k); if(!RENDER){ playing=false; $("play").textContent="Play"; seek(0);} };
+    box.appendChild(b);
+  }
+  const startKey = qs.get("vendor") in CFGS ? qs.get("vendor") : "candles";
+  setVendor(startKey);
+  [...box.children][Object.keys(CFGS).indexOf(startKey)].classList.add("on");
+
+  $("play").onclick = () => {
+    if (playing){ playing = false; $("play").textContent = "Play"; tOffset = curT; }
+    else {
+      if (curT >= DUR) { tOffset = 0; }
+      else tOffset = curT;
+      playing = true; $("play").textContent = "Pause";
+      t0 = performance.now(); requestAnimationFrame(tick);
+    }
+  };
+  $("scrub").oninput = e => { playing = false; $("play").textContent="Play"; seek(+e.target.value); tOffset = curT; };
+
+  seek(0);
+  window.__ready = true;
+}
+window.seekTo = s => seek(s);   // render hook
+boot();
+</script>
+</body>
+</html>

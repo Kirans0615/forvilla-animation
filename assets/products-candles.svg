@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <g id="p1"><!-- soy candle in amber jar -->
+    <rect fill="#C9822F" x="55" y="70" width="90" height="120" rx="14"/>
+    <rect fill="#E3A34F" x="55" y="70" width="90" height="70" rx="14"/>
+    <rect fill="#FBF4E4" x="67" y="112" width="66" height="44" rx="8"/>
+    <rect fill="#8A5A3B" x="49" y="54" width="102" height="22" rx="10"/>
+    <rect fill="#6B4632" x="96" y="42" width="8" height="14" rx="3"/>
+    <path fill="#F2B84B" d="M100 18 Q112 34 100 46 Q88 34 100 18 Z"/>
+  </g>
+  <g id="p2" transform="translate(200 0)"><!-- wax melt stack -->
+    <rect fill="#E2725B" x="46" y="146" width="108" height="44" rx="10"/>
+    <rect fill="#EF9C86" x="58" y="104" width="84" height="44" rx="10"/>
+    <rect fill="#F6C4B4" x="70" y="62" width="60" height="44" rx="10"/>
+    <circle fill="#FBF4E4" cx="100" cy="84" r="10"/>
+  </g>
+  <g id="p3" transform="translate(400 0)"><!-- room spray bottle -->
+    <rect fill="#B9D2C9" x="62" y="78" width="76" height="112" rx="16"/>
+    <rect fill="#FBF4E4" x="74" y="108" width="52" height="52" rx="8"/>
+    <path fill="#8FB86E" d="M84 120 q8 14 16 0 q8 -14 16 0" stroke="#8FB86E" stroke-width="6" fill="none"/>
+    <rect fill="#8A5A3B" x="84" y="52" width="32" height="30" rx="6"/>
+    <rect fill="#3A2A20" x="80" y="34" width="26" height="22" rx="6"/>
+    <rect fill="#3A2A20" x="104" y="40" width="18" height="10" rx="5"/>
+  </g>
+</svg>

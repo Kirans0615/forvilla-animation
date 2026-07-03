@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220">
+  <rect class="cntSkirt" fill="#F1E6CE" x="30" y="46" width="500" height="150" rx="12"/>
+  <g class="cntStripe" fill="#E0CDA4">
+    <rect x="70" y="46" width="34" height="150"/>
+    <rect x="160" y="46" width="34" height="150"/>
+    <rect x="250" y="46" width="34" height="150"/>
+    <rect x="340" y="46" width="34" height="150"/>
+    <rect x="430" y="46" width="34" height="150"/>
+  </g>
+  <rect class="woodD" fill="#8A5A3B" x="40" y="188" width="26" height="32" rx="6"/>
+  <rect class="woodD" fill="#8A5A3B" x="494" y="188" width="26" height="32" rx="6"/>
+  <rect class="wood" fill="#A9714B" x="0" y="18" width="560" height="34" rx="12"/>
+  <rect class="woodHi" fill="#C08A5E" x="0" y="18" width="560" height="12" rx="6"/>
+</svg>

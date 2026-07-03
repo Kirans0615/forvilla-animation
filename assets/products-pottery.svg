@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <g id="p1"><!-- hand-thrown mug -->
+    <path fill="#7E9BB5" d="M126 96 q30 -4 30 22 q0 26 -30 22 Z"/>
+    <rect fill="#93AEC6" x="52" y="72" width="84" height="118" rx="18"/>
+    <path fill="#B7CBDC" d="M52 96 q42 18 84 0 l0 -14 q-42 16 -84 0 Z"/>
+    <ellipse fill="#5F7E9B" cx="94" cy="78" rx="42" ry="12"/>
+    <ellipse fill="#3A2A20" cx="94" cy="78" rx="30" ry="8" opacity="0.45"/>
+  </g>
+  <g id="p2" transform="translate(200 0)"><!-- planter with succulent -->
+    <path fill="#D98E73" d="M52 110 h96 l-12 80 h-72 Z"/>
+    <rect fill="#C4523E" x="44" y="98" width="112" height="24" rx="10"/>
+    <g fill="#8FB86E">
+      <path d="M100 96 q-6 -44 0 -58 q6 14 0 58"/>
+      <path d="M96 98 q-30 -20 -34 -44 q26 8 36 40"/>
+      <path d="M104 98 q30 -20 34 -44 q-26 8 -36 40"/>
+    </g>
+    <circle fill="#7BA05B" cx="100" cy="98" r="10"/>
+  </g>
+  <g id="p3" transform="translate(400 0)"><!-- nesting bowl stack -->
+    <path fill="#E8DBB9" d="M40 148 q60 44 120 0 l-8 24 q-52 30 -104 0 Z"/>
+    <path fill="#93AEC6" d="M52 112 q48 36 96 0 l-6 22 q-42 26 -84 0 Z"/>
+    <path fill="#D98E73" d="M64 78 q36 28 72 0 l-5 20 q-31 20 -62 0 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+{
+  "candles": {
+    "name": "Willow & Wick Candle Co.",
+    "nameLines": ["Willow & Wick", "Candle Co."],
+    "category": "Candles & Home Fragrance",
+    "handle": "@willowwickcandles",
+    "products": ["Soy Candles", "Wax Melts", "Room Sprays"],
+    "story1": "Hand-poured soy candles,",
+    "story2": "made in small batches in DC.",
+    "eventName": "Summer Makers Market",
+    "eventDate": "Sat · July 11",
+    "venue": "Georgetown Waterfront Park",
+    "booth": "Booth A1",
+    "sheet": "products-candles.svg",
+    "palette": {
+      "sky": "#FDEEDC", "canA": "#E2725B", "canB": "#F6E7D3", "canTrim": "#C4523E",
+      "accent": "#E2725B", "chip": "#F2B84B", "avBg": "#F2B84B"
+    }
+  },
+  "pottery": {
+    "name": "Terra Luna Ceramics",
+    "nameLines": ["Terra Luna", "Ceramics"],
+    "category": "Pottery & Ceramics",
+    "handle": "@terralunaceramics",
+    "products": ["Hand-Thrown Mugs", "Planters", "Serving Bowls"],
+    "story1": "Stoneware shaped on the wheel,",
+    "story2": "one piece at a time.",
+    "eventName": "Riverside Makers Bazaar",
+    "eventDate": "Sat · August 15",
+    "venue": "Yards Park",
+    "booth": "Booth A1",
+    "sheet": "products-pottery.svg",
+    "palette": {
+      "sky": "#E9F0F4", "canA": "#5F7E9B", "canB": "#EDF3F6", "canTrim": "#4A6B80",
+      "accent": "#5F7E9B", "chip": "#D98E73", "avBg": "#93AEC6"
+    }
+  },
+  "honey": {
+    "name": "Prairie Honey Co.",
+    "nameLines": ["Prairie", "Honey Co."],
+    "category": "Food & Pantry",
+    "handle": "@prairiehoneyco",
+    "products": ["Wildflower Honey", "Honeycomb", "Beeswax Candles"],
+    "story1": "Raw wildflower honey from hives",
+    "story2": "just outside the city.",
+    "eventName": "Summer Makers Market",
+    "eventDate": "Sat · July 11",
+    "venue": "Georgetown Waterfront Park",
+    "booth": "Booth B2",
+    "sheet": "products-honey.svg",
+    "palette": {
+      "sky": "#FDF3D9", "canA": "#F2B84B", "canB": "#FBF4E4", "canTrim": "#C9822F",
+      "accent": "#C9822F", "chip": "#F2B84B", "avBg": "#E3A34F"
+    }
+  },
+  "jewelry": {
+    "name": "Copper Fox Jewelry",
+    "nameLines": ["Copper Fox", "Jewelry"],
+    "category": "Jewelry",
+    "handle": "@copperfoxjewelry",
+    "products": ["Copper Earrings", "Brass Cuffs", "Pendants"],
+    "story1": "Hammered copper and brass,",
+    "story2": "forged and finished by hand.",
+    "eventName": "Village Craft Fair",
+    "eventDate": "Sun · July 26",
+    "venue": "Old Town Market Square",
+    "booth": "Booth A2",
+    "sheet": "products-jewelry.svg",
+    "palette": {
+      "sky": "#EDF2EF", "canA": "#4E8578", "canB": "#F0EAD8", "canTrim": "#3D6B60",
+      "accent": "#B96B45", "chip": "#D3A94C", "avBg": "#CE7B50"
+    }
+  },
+  "soap": {
+    "name": "Bloom & Bramble Botanicals",
+    "nameLines": ["Bloom & Bramble", "Botanicals"],
+    "category": "Bath & Body",
+    "handle": "@bloomandbramble",
+    "products": ["Herbal Soaps", "Bath Soaks", "Botanical Balms"],
+    "story1": "Herbal skincare grown, dried,",
+    "story2": "and blended by hand.",
+    "eventName": "Handmade at the Harbor",
+    "eventDate": "Sat · July 18",
+    "venue": "National Harbor Plaza",
+    "booth": "Booth A4",
+    "sheet": "products-soap.svg",
+    "palette": {
+      "sky": "#EDF3E7", "canA": "#7BA05B", "canB": "#F3F6EC", "canTrim": "#5F824A",
+      "accent": "#7BA05B", "chip": "#C9B8D8", "avBg": "#A8BFA0"
+    }
+  },
+  "bakes": {
+    "name": "Sweet Alchemy Bakes",
+    "nameLines": ["Sweet Alchemy", "Bakes"],
+    "category": "Baked Goods",
+    "handle": "@sweetalchemybakes",
+    "products": ["French Macarons", "Shortbread", "Brownies"],
+    "story1": "Macarons and sweets baked fresh",
+    "story2": "the morning of every market.",
+    "eventName": "Late Summer Craft Collective",
+    "eventDate": "Sun · August 23",
+    "venue": "Silver Spring Civic Plaza",
+    "booth": "Booth A2",
+    "sheet": "products-bakes.svg",
+    "palette": {
+      "sky": "#FCEDEA", "canA": "#EFA0B4", "canB": "#FBF4E4", "canTrim": "#D97A93",
+      "accent": "#D97A93", "chip": "#6B4632", "avBg": "#EFA0B4"
+    }
+  }
+}

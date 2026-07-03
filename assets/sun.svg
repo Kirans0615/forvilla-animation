@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <g class="sunRays" fill="#F2B84B">
+    <rect x="74" y="0" width="12" height="26" rx="6"/>
+    <rect x="74" y="134" width="12" height="26" rx="6"/>
+    <rect x="0" y="74" width="26" height="12" rx="6"/>
+    <rect x="134" y="74" width="26" height="12" rx="6"/>
+    <rect x="74" y="0" width="12" height="26" rx="6" transform="rotate(45 80 80)"/>
+    <rect x="74" y="134" width="12" height="26" rx="6" transform="rotate(45 80 80)"/>
+    <rect x="0" y="74" width="26" height="12" rx="6" transform="rotate(45 80 80)"/>
+    <rect x="134" y="74" width="26" height="12" rx="6" transform="rotate(45 80 80)"/>
+  </g>
+  <circle class="sunCore" fill="#F6C75E" cx="80" cy="80" r="50"/>
+  <circle class="sunGlow" fill="#FADFA0" cx="80" cy="80" r="38"/>
+</svg>

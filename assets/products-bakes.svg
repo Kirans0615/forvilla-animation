@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <g id="p1"><!-- macaron stack -->
+    <g transform="translate(0 6)">
+      <path fill="#EFA0B4" d="M46 168 q0 -16 54 -16 q54 0 54 16 q0 14 -54 14 q-54 0 -54 -14 Z"/>
+      <rect fill="#FBF4E4" x="52" y="158" width="96" height="10" rx="5"/>
+      <path fill="#EFA0B4" d="M46 154 q0 -16 54 -16 q54 0 54 16 l0 6 h-108 Z"/>
+      <path fill="#C9B8D8" d="M56 118 q0 -14 44 -14 q44 0 44 14 q0 12 -44 12 q-44 0 -44 -12 Z" transform="translate(0 14)"/>
+      <rect fill="#FBF4E4" x="62" y="112" width="76" height="9" rx="4.5" transform="translate(0 14)"/>
+      <path fill="#C9B8D8" d="M56 106 q0 -14 44 -14 q44 0 44 14 l0 5 h-88 Z" transform="translate(0 14)"/>
+      <path fill="#A8BFA0" d="M66 84 q0 -12 34 -12 q34 0 34 12 q0 10 -34 10 q-34 0 -34 -10 Z" transform="translate(0 22)"/>
+      <rect fill="#FBF4E4" x="72" y="78" width="56" height="8" rx="4" transform="translate(0 22)"/>
+      <path fill="#A8BFA0" d="M66 72 q0 -12 34 -12 q34 0 34 12 l0 5 h-68 Z" transform="translate(0 22)"/>
+    </g>
+  </g>
+  <g id="p2" transform="translate(200 0)"><!-- shortbread on plate -->
+    <ellipse fill="#E8DBB9" cx="100" cy="168" rx="72" ry="22"/>
+    <circle fill="#EACB8B" cx="74" cy="132" r="34"/>
+    <circle fill="#E3B968" cx="74" cy="132" r="24"/>
+    <g fill="#C9822F"><circle cx="66" cy="126" r="4"/><circle cx="84" cy="130" r="4"/><circle cx="72" cy="142" r="4"/></g>
+    <circle fill="#EACB8B" cx="130" cy="140" r="30"/>
+    <circle fill="#E3B968" cx="130" cy="140" r="21"/>
+    <g fill="#C9822F"><circle cx="124" cy="134" r="3.5"/><circle cx="138" cy="142" r="3.5"/></g>
+  </g>
+  <g id="p3" transform="translate(400 0)"><!-- brownie stack -->
+    <g transform="translate(0 4)">
+      <path fill="#6B4632" d="M40 150 h120 v26 q0 12 -14 12 h-92 q-14 0 -14 -12 Z"/>
+      <rect fill="#8A5A3B" x="40" y="140" width="120" height="18" rx="8"/>
+      <path fill="#6B4632" d="M56 96 h88 v24 q0 10 -12 10 h-64 q-12 0 -12 -10 Z"/>
+      <rect fill="#8A5A3B" x="56" y="86" width="88" height="16" rx="7"/>
+      <path fill="#FBF4E4" d="M64 90 q10 8 18 0 q10 8 18 0 q10 8 18 0 q10 8 18 0 l0 -6 h-72 Z" opacity="0.9"/>
+      <circle fill="#E2725B" cx="100" cy="74" r="12"/>
+      <path fill="#7BA05B" d="M100 62 q10 -8 16 -4 q-6 8 -16 4 Z"/>
+    </g>
+  </g>
+</svg>

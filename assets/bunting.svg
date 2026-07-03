@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 130">
+  <path class="rope" fill="none" stroke="#8A5A3B" stroke-width="6" stroke-linecap="round" d="M10 18 Q360 74 710 18"/>
+  <g>
+    <path class="bunA" fill="#E2725B" d="M52 26 h56 l-28 62 Z"/>
+    <path class="bunB" fill="#F2B84B" d="M140 36 h56 l-28 62 Z"/>
+    <path class="bunC" fill="#7BA05B" d="M228 44 h56 l-28 62 Z"/>
+    <path class="bunA" fill="#E2725B" d="M316 48 h56 l-28 62 Z"/>
+    <path class="bunB" fill="#F2B84B" d="M404 46 h56 l-28 62 Z"/>
+    <path class="bunC" fill="#7BA05B" d="M492 40 h56 l-28 62 Z"/>
+    <path class="bunA" fill="#E2725B" d="M580 30 h56 l-28 62 Z"/>
+  </g>
+</svg>

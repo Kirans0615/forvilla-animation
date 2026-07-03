@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect class="lgTile" fill="#E2725B" x="6" y="6" width="188" height="188" rx="44"/>
+  <g>
+    <path class="lgAwn" fill="#FBF4E4" d="M34 56 Q100 34 166 56 L166 66 L34 66 Z"/>
+    <path class="lgAwn" fill="#FBF4E4" d="M34 64 h33 v6 q0 14 -16.5 14 q-16.5 0 -16.5 -14 Z"/>
+    <path class="lgAwn" fill="#FBF4E4" d="M67 64 h33 v6 q0 14 -16.5 14 q-16.5 0 -16.5 -14 Z" opacity="0.55"/>
+    <path class="lgAwn" fill="#FBF4E4" d="M100 64 h33 v6 q0 14 -16.5 14 q-16.5 0 -16.5 -14 Z"/>
+    <path class="lgAwn" fill="#FBF4E4" d="M133 64 h33 v6 q0 14 -16.5 14 q-16.5 0 -16.5 -14 Z" opacity="0.55"/>
+  </g>
+  <path class="lgHeart" fill="#FBF4E4" d="M100 168 Q56 138 56 112 Q56 92 76 92 Q92 92 100 106 Q108 92 124 92 Q144 92 144 112 Q144 138 100 168 Z"/>
+</svg>

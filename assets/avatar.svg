@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+  <circle class="avRing" fill="#FBF4E4" cx="130" cy="130" r="126"/>
+  <circle class="avBg" fill="#F2B84B" cx="130" cy="130" r="112"/>
+  <clipPath id="avClip"><circle cx="130" cy="130" r="112"/></clipPath>
+  <g clip-path="url(#avClip)">
+    <path class="avBody" fill="#E2725B" d="M40 260 Q40 176 130 176 Q220 176 220 260 Z"/>
+    <path class="avApron" fill="#FBF4E4" d="M92 208 Q130 190 168 208 L168 260 L92 260 Z"/>
+    <circle class="avSkin" fill="#EFB98F" cx="130" cy="112" r="52"/>
+    <path class="avHair" fill="#6B4632" d="M74 108 Q74 52 130 52 Q186 52 186 108 Q186 92 168 84 Q166 66 148 66 Q140 58 122 62 Q96 66 92 86 Q76 92 74 108 Z"/>
+    <circle class="avEye" fill="#3A2A20" cx="112" cy="112" r="6"/>
+    <circle class="avEye" fill="#3A2A20" cx="148" cy="112" r="6"/>
+    <path class="avSmile" fill="none" stroke="#3A2A20" stroke-width="6" stroke-linecap="round" d="M116 134 Q130 146 144 134"/>
+    <circle class="avBlush" fill="#E89A78" cx="98" cy="126" r="8"/>
+    <circle class="avBlush" fill="#E89A78" cx="162" cy="126" r="8"/>
+  </g>
+</svg>

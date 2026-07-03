@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1120">
+  <rect class="phFrame" fill="none" stroke="#3A2A20" stroke-width="52" x="34" y="34" width="492" height="1052" rx="60"/>
+  <rect class="phNotch" fill="#3A2A20" x="200" y="52" width="160" height="30" rx="15"/>
+  <rect class="phBar" fill="#3A2A20" x="220" y="1044" width="120" height="10" rx="5" opacity="0.5"/>
+</svg>

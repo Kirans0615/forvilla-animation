@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 190">
+  <path class="canA" fill="#E2725B" d="M22 96 Q350 10 678 96 L678 120 L22 120 Z"/>
+  <g>
+    <path class="canA" fill="#E2725B" d="M22 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canB" fill="#F6E7D3" d="M116 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canA" fill="#E2725B" d="M210 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canB" fill="#F6E7D3" d="M304 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canA" fill="#E2725B" d="M398 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canB" fill="#F6E7D3" d="M492 118 h94 v18 q0 34 -47 34 q-47 0 -47 -34 Z"/>
+    <path class="canA" fill="#E2725B" d="M586 118 h92 v18 q0 34 -46 34 q-46 0 -46 -34 Z"/>
+  </g>
+  <rect class="canTrim" fill="#C4523E" x="10" y="108" width="680" height="16" rx="8"/>
+  <circle class="canKnob" fill="#F2B84B" cx="350" cy="30" r="16"/>
+</svg>

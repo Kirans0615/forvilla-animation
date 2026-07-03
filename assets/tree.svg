@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320">
+  <path class="trk" fill="#8A5A3B" d="M112 320 L112 180 Q120 160 128 180 L128 320 Z"/>
+  <path class="trk" fill="#8A5A3B" d="M118 210 Q90 185 78 160 L90 152 Q112 178 122 198 Z"/>
+  <circle class="lf1" fill="#7BA05B" cx="120" cy="110" r="78"/>
+  <circle class="lf2" fill="#8FB86E" cx="66" cy="150" r="50"/>
+  <circle class="lf2" fill="#8FB86E" cx="176" cy="146" r="54"/>
+  <circle class="lf3" fill="#A5C97F" cx="120" cy="78" r="16"/>
+  <circle class="lf3" fill="#A5C97F" cx="160" cy="112" r="11"/>
+  <circle class="lf3" fill="#A5C97F" cx="84" cy="120" r="10"/>
+</svg>

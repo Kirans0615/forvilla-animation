@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <g id="p1"><!-- wrapped herbal soap bars -->
+    <rect fill="#A8BFA0" x="42" y="120" width="116" height="70" rx="14"/>
+    <rect fill="#FBF4E4" x="76" y="120" width="48" height="70"/>
+    <path fill="#7BA05B" d="M100 134 q-14 10 0 22 q14 -12 0 -22 Z"/>
+    <rect fill="#C9B8D8" x="58" y="58" width="116" height="70" rx="14" transform="rotate(-8 116 93)"/>
+    <rect fill="#FBF4E4" x="92" y="58" width="48" height="70" transform="rotate(-8 116 93)"/>
+    <path fill="#9B85B5" d="M118 74 q-14 10 0 22 q14 -12 0 -22 Z" transform="rotate(-8 116 93)"/>
+  </g>
+  <g id="p2" transform="translate(200 0)"><!-- bath soak jar -->
+    <rect fill="#DCE9E3" x="52" y="72" width="96" height="118" rx="16"/>
+    <rect fill="#B9D2C9" x="52" y="150" width="96" height="40" rx="16"/>
+    <rect fill="#FBF4E4" x="66" y="100" width="68" height="44" rx="8"/>
+    <path fill="#7BA05B" d="M92 108 q8 14 16 0" stroke="#7BA05B" stroke-width="5" fill="none"/>
+    <circle fill="#A8BFA0" cx="86" cy="126" r="5"/>
+    <circle fill="#C9B8D8" cx="102" cy="128" r="5"/>
+    <circle fill="#A8BFA0" cx="116" cy="124" r="5"/>
+    <rect fill="#8A5A3B" x="46" y="54" width="108" height="24" rx="10"/>
+  </g>
+  <g id="p3" transform="translate(400 0)"><!-- botanical balm tins -->
+    <ellipse fill="#D3A94C" cx="100" cy="162" rx="62" ry="26"/>
+    <rect fill="#E9C878" x="38" y="128" width="124" height="34" rx="16"/>
+    <ellipse fill="#F6E7D3" cx="100" cy="128" rx="62" ry="26"/>
+    <ellipse fill="#FBF4E4" cx="100" cy="128" rx="48" ry="19"/>
+    <g fill="#7BA05B">
+      <path d="M100 116 q-5 -18 0 -26 q5 8 0 26"/>
+      <path d="M96 118 q-16 -10 -18 -22 q14 4 20 20"/>
+      <path d="M104 118 q16 -10 18 -22 q-14 4 -20 20"/>
+    </g>
+  </g>
+</svg>

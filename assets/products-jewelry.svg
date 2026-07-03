@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <g id="p1"><!-- hammered copper earrings on card -->
+    <rect fill="#FBF4E4" x="48" y="40" width="104" height="150" rx="12"/>
+    <rect fill="#4E8578" x="48" y="40" width="104" height="26" rx="12"/>
+    <g stroke="#B96B45" stroke-width="6" fill="none">
+      <circle cx="78" cy="96" r="9"/>
+      <circle cx="122" cy="96" r="9"/>
+    </g>
+    <path fill="#CE7B50" d="M78 108 q22 26 0 58 q-22 -32 0 -58 Z"/>
+    <path fill="#CE7B50" d="M122 108 q22 26 0 58 q-22 -32 0 -58 Z"/>
+    <path fill="#E89B6E" d="M74 124 q4 16 4 30 q-8 -16 -4 -30 Z"/>
+    <path fill="#E89B6E" d="M118 124 q4 16 4 30 q-8 -16 -4 -30 Z"/>
+  </g>
+  <g id="p2" transform="translate(200 0)"><!-- brass cuff on stand -->
+    <path fill="#E8DBB9" d="M60 190 h80 l-10 -34 h-60 Z"/>
+    <path fill="none" stroke="#D3A94C" stroke-width="18" stroke-linecap="round" d="M58 118 a42 42 0 1 1 84 0"/>
+    <path fill="none" stroke="#E9C878" stroke-width="7" stroke-linecap="round" d="M66 112 a34 34 0 1 1 68 0" opacity="0.9"/>
+    <circle fill="#E9C878" cx="58" cy="120" r="11"/>
+    <circle fill="#E9C878" cx="142" cy="120" r="11"/>
+  </g>
+  <g id="p3" transform="translate(400 0)"><!-- pendant necklace on bust -->
+    <path fill="#E8DBB9" d="M100 34 q54 0 54 52 q0 44 -34 62 l0 42 h-40 l0 -42 q-34 -18 -34 -62 q0 -52 54 -52 Z"/>
+    <path fill="none" stroke="#B96B45" stroke-width="6" d="M64 72 q36 44 72 0"/>
+    <circle fill="#CE7B50" cx="100" cy="106" r="16"/>
+    <path fill="#4E8578" d="M100 96 l8 10 l-8 10 l-8 -10 Z"/>
+  </g>
+</svg>
